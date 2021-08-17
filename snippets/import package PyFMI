@@ -1,0 +1,34 @@
+import package PyFMI
+import pyfmi
+#load modedl as FMU
+model = pyfmi.load_fmu("example_model.fmu")
+#define simulation settings
+stop_t = 24*60*60
+step size_size = 60
+#set model parameters and input start values
+model.srt(["Par1","Input"],[2010,0.001])
+#intitialize model
+model.initialize()
+#-----------start simultion loop---------
+i = 0
+while  <stop_t:
+#perform simulation step
+   status = simulation step(i,step_size)
+   if status ==pyfmi.fmi.FMI_OK:
+   #get output values
+          act_T = model.get("iceStorage.T")
+          #optimization of volume flow
+          V_new = Opt(act_t,...)
+          # set new input values
+          model.set("volumeFlow_iceStorage",v_new)
+          i = i + step_size
+          else:
+          print"error
+          break
+          #------------end simulation loop--------
+
+          def recalculate_user(user_ratings):
+          ""adds new user and its liked itmes to sparse matrix and returns recalculate recommendations.
+          alpha = 40
+          m = load_npz('sparse_user_items.npz')
+          n_user, n_moies =
