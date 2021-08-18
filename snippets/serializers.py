@@ -19,7 +19,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         model = User
         fields = ['url', 'id', 'username', 'snippets']
 
-
+# asdadas
 
 # git token 
 # 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        
