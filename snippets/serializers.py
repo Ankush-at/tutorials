@@ -18,3 +18,8 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ['url', 'id', 'username', 'snippets']
+
+
+
+# git token 
+# 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        
