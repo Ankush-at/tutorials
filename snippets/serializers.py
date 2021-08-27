@@ -16,13 +16,10 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-<<<<<<< HEAD
-        fields = ('id', 'username', 'snippets')
-=======
         fields = ['url', 'id', 'username', 'snippets']
 
 
 
 # git token 
 # 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        
->>>>>>> a49fe038171edae5a202d26b58b75523759f6e1b
+# >>>>>>> a49fe038171edae5a202d26b58b75523759f6e1b
