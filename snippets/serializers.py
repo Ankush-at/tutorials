@@ -19,4 +19,6 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['url', 'id', 'username', 'snippets']
 
 
-# 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
+
+# git token
+# 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
