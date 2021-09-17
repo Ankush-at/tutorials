@@ -22,7 +22,11 @@ class UserSerializer(serializers.ModelSerializer):
 
 # git token
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # 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
+=======
+# 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
+>>>>>>> Stashed changes
 =======
 # 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
 >>>>>>> Stashed changes
