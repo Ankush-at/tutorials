@@ -24,7 +24,12 @@ class Snippet(models.Model):
 
 
     class Meta:
+<<<<<<< Updated upstream
         ordering = ('created',) 
+=======
+        ordering = ('created',)
+
+>>>>>>> Stashed changes
     def save(self, *args, **kwargs):
         lexer = get_lexer_by_name(self.language)
         linenos = self.linenos and 'table' or False
@@ -32,4 +37,8 @@ class Snippet(models.Model):
         formatter = HtmlFormatter(style=self.style, linenos=linenos,
                                   full=True, **options)
         self.highlighted = highlight(self.code, lexer, formatter)
+<<<<<<< Updated upstream
         super(Snippet, self).save(*args, **kwargs)
+=======
+        super(Snippet, self).save(*args, **kwargs)
+>>>>>>> Stashed changes
