@@ -20,5 +20,5 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 
-# git token 
+# git token
 # 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
