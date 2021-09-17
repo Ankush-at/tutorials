@@ -18,3 +18,6 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ['url', 'id', 'username', 'snippets']
+
+
+# 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
