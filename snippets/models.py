@@ -33,6 +33,7 @@ class Snippet(models.Model):
         formatter = HtmlFormatter(style=self.style, linenos=linenos,
                                   full=True, **options)
         self.highlighted = highlight(self.code, lexer, formatter)
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
         super(Snippet, self).save(*args, **kwargs)
@@ -42,3 +43,6 @@ class Snippet(models.Model):
 =======
         super(Snippet, self).save(*args, **kwargs)
 >>>>>>> Stashed changes
+=======
+        super(Snippet, self).save(*args, **kwargs)
+>>>>>>> e3c89f3d6a80668d4cee9af6b3c69bb46a37f98a
